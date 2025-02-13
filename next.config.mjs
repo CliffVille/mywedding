@@ -1,24 +1,8 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  compiler: {
-    styledComponents: true,
-  },
-  experimental: {
-    reactRefresh: false, 
-  },
-  webpack(config) {
-    config.devServer = {
-      hot: false,  
-      liveReload: false, 
-    };
-    return config;
-  },
-  
-  output: "export", 
-  basePath: "/wedding",
+  output: "export", // Enables static export mode
+  basePath: "/wedding", // Matches your GitHub repository name
   images: {
-    unoptimized: true, 
+    unoptimized: true, // Fixes images for static hosting
   },
 };
 
