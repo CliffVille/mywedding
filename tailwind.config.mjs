@@ -7,11 +7,17 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        display: ["Playfair Display", "serif"],
+        script: ["Great Vibes", "cursive"],
+        body: ["Lora", "serif"],
+      },
+      backgroundImage: {
+        "hero-bg": "url('/background.jpg')",
+        "bg": "url('/coner.png')",
+        "background-bg": "url('/background-bg.webp')",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
