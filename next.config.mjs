@@ -1,9 +1,19 @@
 const nextConfig = {
-  output: "export", // Enables static export mode
-  basePath: "/wedding", // Matches your GitHub repository name
-  images: {
-    unoptimized: true, // Fixes images for static hosting
-  },
-};
-
-export default nextConfig;
+    reactStrictMode: true,
+    compiler: {
+      styledComponents: true,
+    },
+    experimental: {
+      reactRefresh: false, // Ensure Fast Refresh is OFF
+    },
+    webpack(config) {
+      config.devServer = {
+        hot: false,  // Disable Hot Module Replacement
+        liveReload: false, // Disable live reload
+      };
+      return config;
+    },
+  };
+  
+  export default nextConfig;
+  

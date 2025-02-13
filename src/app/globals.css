@@ -12,8 +12,7 @@ html, body {
 
 body {
   font-family: 'Playfair Display', serif;
-  @apply overflow-hidden;
-  background-image: url('/background-bg.webp'); 
+  background-image: url('/wedding/background-bg.webp'); 
   background-size: cover;
   background-position: center;  
   background-attachment: fixed; 
