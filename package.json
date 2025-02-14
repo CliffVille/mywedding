@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npx tailwindcss -o out/tailwindcss",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
