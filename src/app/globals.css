@@ -12,11 +12,11 @@ html, body {
 
 body {
   font-family: 'Playfair Display', serif;
-  background-image: url('/background-bg.webp'); 
+  background-image: url('/background-bg.webp');
   background-size: cover;
   background-position: center;  
   background-repeat: no-repeat;
-}; 
+}
 
 #__next-build-watcher, 
 #__next-build-error-overlay, 

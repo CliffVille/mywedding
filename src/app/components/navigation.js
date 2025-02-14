@@ -5,25 +5,27 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiMenu, FiX } from "react-icons/fi";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/mywedding' : '';
+
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname(); 
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/rsvp", label: "RSVP" },
-    { href: "/guestbook", label: "Guestbook" },
-    { href: "/gallery", label: "Gallery" },
-    { href: "/details", label: "Details" },
-    { href: "/registry", label: "Registry" },
+    { href: `${basePath}/`, label: "Home" },
+    { href: `${basePath}/rsvp`, label: "RSVP" },
+    { href: `${basePath}/guestbook`, label: "Guestbook" },
+    { href: `${basePath}/gallery`, label: "Gallery" },
+    { href: `${basePath}/details`, label: "Details" },
+    { href: `${basePath}/registry`, label: "Registry" },
   ];
 
   return (
     <nav className="w-full bg-white shadow-md px-6 lg:px-12">
       <div className="max-w-5xl mx-auto flex justify-between items-center py-4">
-        <Link href="/">
+        <Link href={`${basePath}/`}>
             <img
-                src="/love.png"
+                src={`${basePath}/love.png`}
                 alt="Logo"
                 className="w-10 h-10 rounded-xl object-cover"
             />
@@ -77,4 +79,4 @@ const Nav = () => {
   );
 };
 
-export default Nav; 
+export default Nav;
