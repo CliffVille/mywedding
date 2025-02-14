@@ -5,11 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap');
 
 :root {
-  --background-image: url('/background-bg.webp');
+  --background-image: url('/floralbg.webp');
 }
 
 [data-environment='production'] {
-  --background-image: url('/test-cliff-stuff/background-bg.webp');
+  --background-image: url('/mywedding/floralbg.webp');
 }
 
 html, body {

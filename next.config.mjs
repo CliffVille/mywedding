@@ -6,14 +6,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "",  // Remove /test-cliff-stuff for local development
-  assetPrefix: "", // Remove /test-cliff-stuff/ for local development
+  basePath: "",  // Remove /mywedding for local development
+  assetPrefix: "", // Remove /mywedding/ for local development
 };
 
 // Use this configuration for production (GitHub Pages)
 if (process.env.NODE_ENV === "production") {
-  nextConfig.basePath = "/test-cliff-stuff";
-  nextConfig.assetPrefix = "/test-cliff-stuff/";
+  nextConfig.basePath = "/mywedding";
+  nextConfig.assetPrefix = "/mywedding/";
 }
 
 export default nextConfig;

@@ -5,14 +5,18 @@ import Image from "next/image";
 import Modal from "react-modal";
 
 const images = [
-  "/background.png",
-  "/background.png",
-  "/background.png",
-  "/background.png",
-  "/background.png",
-  "/background.png",
-  "/background.png",
-  "/background.png",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "", // Example of a missing image
 ];
 
 export default function GalleryPage() {
@@ -29,22 +33,38 @@ export default function GalleryPage() {
           <div
             key={index}
             className="relative cursor-pointer group overflow-hidden rounded-2xl shadow-lg"
-            onClick={() => setSelectedImage(src)}
+            onClick={() => src && setSelectedImage(src)}
           >
-            <Image
-              src={src}
-              alt={`Gallery image ${index + 1}`}
-              width={400}
-              height={300}
-              className="rounded-2xl object-cover transition-transform duration-300 group-hover:scale-105"
-              loading="lazy"
-            />
+            {src ? (
+              <Image
+                src={src}
+                alt={`Gallery image ${index + 1}`}
+                width={200}
+                height={100}
+                className="rounded-2xl object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              />
+            ) : (
+              <svg
+                width="200"
+                height="100"
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="black"
+                fill="none"
+                strokeWidth="8"
+                className="rounded-2xl bg-transparent object-cover transition-transform duration-300 group-hover:scale-105"
+              >
+                <rect x="10" y="10" width="180" height="180" />
+                <path d="M40 40L160 160M160 40L40 160" />
+              </svg>
+            )}
             <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </div>
         ))}
       </div>
 
-      
+      {/* Modal for selected images */}
       {selectedImage && (
         <Modal
           isOpen={!!selectedImage}

@@ -1,5 +1,5 @@
 const isProduction = process.env.NODE_ENV === 'production';
-const basePath = isProduction ? '/test-cliff-stuff' : '';
+const basePath = isProduction ? '/mywedding' : '';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -17,8 +17,7 @@ export default {
       },
       backgroundImage: {
         "hero-bg": `url('${basePath}/background.jpg')`,
-        "bg": `url('${basePath}/coner.png')`,
-        "background-bg": `url('${basePath}/background-bg.webp')`,
+        "background-bg": `url('${basePath}/floralbg.webp')`,
       },
     },
   },
