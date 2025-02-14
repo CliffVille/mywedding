@@ -12,10 +12,9 @@ html, body {
 
 body {
   font-family: 'Playfair Display', serif;
-  background-image: url('/wedding/background-bg.webp'); 
+  background-image: url('/background-bg.webp'); 
   background-size: cover;
   background-position: center;  
-  background-attachment: fixed; 
   background-repeat: no-repeat;
 }; 
 

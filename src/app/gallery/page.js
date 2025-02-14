@@ -5,14 +5,14 @@ import Image from "next/image";
 import Modal from "react-modal";
 
 const images = [
-  "/background.jpg",
-  "/background.jpg",
-  "/background.jpg",
-  "/background.jpg",
-  "/background.jpg",
-  "/background.jpg",
-  "/background.jpg",
-  "/background.jpg",
+  "/background.png",
+  "/background.png",
+  "/background.png",
+  "/background.png",
+  "/background.png",
+  "/background.png",
+  "/background.png",
+  "/background.png",
 ];
 
 export default function GalleryPage() {

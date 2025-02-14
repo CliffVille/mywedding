@@ -2,7 +2,7 @@
 
 export default function RegistryPage() {
   return (
-    <div className="min-h-screen bg-transparent bg-fixed py-16 px-6 flex flex-col items-center">
+    <div className="min-h-screen bg-hero-bg bg-cover bg-top bg-no-repeat px-4 py-12 overflow-hidden flex flex-col items-center">
       
       <h1 className="text-5xl font-display font-bold text-green-900 drop-shadow-md text-center">
         Our Wedding Registry

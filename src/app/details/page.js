@@ -2,7 +2,7 @@
 
 export default function DetailsPage() {
   return (
-    <div className="min-h-screen bg-transparent py-16 px-6 flex flex-col items-center overflow-auto">
+    <div className="min-h-screen bg-hero-bg bg-cover bg-top bg-no-repeat py-16 px-6 flex flex-col items-center overflow-auto">
   
       <h1 className="text-5xl font-display font-bold text-green-900 drop-shadow-md text-center">
         Our Love Story & Wedding Details
