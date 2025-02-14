@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiMenu, FiX } from "react-icons/fi";
 
-const basePath = process.env.NODE_ENV === 'production' ? '/mywedding' : '';
+const basePath = process.env.NODE_ENV === 'production' ? '/test-cliff-stuff' : '';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
