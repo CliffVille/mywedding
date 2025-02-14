@@ -23,7 +23,7 @@ const Nav = () => {
       <div className="max-w-5xl mx-auto flex justify-between items-center py-4">
         <Link href="/">
             <img
-                src="/love.png"
+                src={process.env.NODE_ENV === 'production' ? '/mywedding/love.png' : '/love.png'}
                 alt="Logo"
                 className="w-10 h-10 rounded-xl object-cover"
             />
