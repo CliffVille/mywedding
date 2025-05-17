@@ -16,7 +16,7 @@ export default {
         body: ["Lora", "serif"],
       },
       backgroundImage: {
-        "hero-bg": `url('${basePath}/background.jpg')`,
+        "hero-bg": `url('${basePath}/background1.jpg')`,
         "background-bg": `url('${basePath}/floralbg.webp')`,
       },
     },

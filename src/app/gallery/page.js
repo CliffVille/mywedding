@@ -5,18 +5,18 @@ import Image from "next/image";
 import Modal from "react-modal";
 
 const images = [
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "", // Example of a missing image
+  "/LC1.jpg",
+  "/LC2.jpg",
+  "/LC3.jpg",
+  "/LC6.jpg",
+  "/LC7.jpg",
+  "/LC9.jpg",
+  "/LC10.jpg",
+  "/LC11.jpg",
+  "/LC12.jpg",
+  "/LC13.jpg",
+  "/LC14.jpg",
+  "/LC15.jpg",
 ];
 
 export default function GalleryPage() {
@@ -25,7 +25,7 @@ export default function GalleryPage() {
   return (
     <div className="min-h-screen flex flex-col items-center bg-hero-bg bg-cover bg-top bg-no-repeat px-4 py-12 overflow-hidden">
       
-      <h1 className="text-5xl font-display font-bold text-green-800 drop-shadow-md">Our Journey in Pictures</h1>
+      <h1 className="text-5xl text-center font-display font-bold text-green-800 drop-shadow-md">Our Journey in Pictures</h1>
       <p className="text-lg text-gray-700 mt-2 italic">A glimpse into our love story</p>
 
       <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl">
@@ -69,12 +69,14 @@ export default function GalleryPage() {
         <Modal
           isOpen={!!selectedImage}
           onRequestClose={() => setSelectedImage(null)}
-          className="fixed inset-0 flex justify-center items-center bg-black/80 backdrop-blur-md"
+          contentLabel="Image Modal"
+          overlayClassName="absolute inset-0 bg-black/80 backdrop-blur-md flex justify-center z-50"
+          className="relative bg-transparent outline-none p-4"
           ariaHideApp={false}
         >
           <div className="relative p-4">
             <button
-              className="absolute top-2 right-2 bg-white/90 text-black px-3 py-2 rounded-full text-lg font-bold shadow-md hover:bg-gray-300 transition"
+              className="absolute top-5 right-5 bg-white/90 text-black px-3 py-2 rounded-2xl text-lg font-bold shadow-md hover:bg-gray-300 transition"
               onClick={() => setSelectedImage(null)}
             >
               ✕
@@ -82,8 +84,8 @@ export default function GalleryPage() {
             <Image
               src={selectedImage}
               alt="Selected"
-              width={900}
-              height={600}
+              width={400}
+              height={400}
               className="rounded-lg shadow-xl"
             />
           </div>

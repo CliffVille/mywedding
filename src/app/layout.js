@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
 
         <Nav />
 
-        <main className="max-w-5xl mx-auto min-h-screen">{children}</main>
+        <main className="w-full mx-auto min-h-screen">{children}</main>
       </body>
     </html>
   );
