@@ -1,6 +1,6 @@
 "use client";
 
-import "./globals.css";
+import "../globals.css";
 import Nav from "@/app/components/navigation";
 import { useEffect } from "react";
 
