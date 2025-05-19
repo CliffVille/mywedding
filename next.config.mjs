@@ -6,14 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "",  // Remove /mywedding for local development
-  assetPrefix: "", // Remove /mywedding/ for local development
+  // REMOVE basePath and assetPrefix for root deployment
 };
-
-// Use this configuration for production (GitHub Pages)
-if (process.env.NODE_ENV === "production") {
-  nextConfig.basePath = "/mywedding";
-  nextConfig.assetPrefix = "/mywedding/";
-}
 
 export default nextConfig;
