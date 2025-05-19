@@ -9,7 +9,7 @@
 }
 
 [data-environment='production'] {
-  --background-image: url('/mywedding/floralbg.webp');
+  --background-image: url('/floralbg.webp');
 }
 
 html, body {
