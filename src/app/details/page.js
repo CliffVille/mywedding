@@ -57,12 +57,22 @@ export default function DetailsPage() {
             </p>
           </div>
 
-          <div className="bg-white/90 p-6 rounded-lg shadow-md text-center">
+         <div className="bg-white/90 p-6 rounded-lg shadow-md text-center">
             <h3 className="text-2xl font-semibold text-green-900">✨ Additional Info</h3>
             <p className="text-gray-700 mt-2">
               - Parking available on-site <br />
               - Guests can arrive at 2:30PM <br />
-              - Contact us if you have any questions!
+              - Contact us if you have any questions! <br />
+              - Hotel block available at <br />
+              <a
+                href="https://www.poco-inn-and-suites.com"
+                className="text-green-600 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                www.poco-inn-and-suites.com
+              </a>{" "} <br />
+              (mention our wedding code <strong>stokerville2025</strong> for a discount)
             </p>
           </div>
         </div>
@@ -77,20 +87,34 @@ export default function DetailsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-4">
           {/* Bridesmaids */}
           <div>
-            <h3 className="text-2xl font-semibold text-green-900 mb-4">👰 Bridesmaids</h3>
+            <h3 className="text-2xl font-semibold text-center md:text-left text-green-900 mb-4">👰 Bridesmaids</h3>
             <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <img src="/bridesmaid1.jpg" alt="Bridesmaid 1" className="w-20 h-20 rounded-full object-cover shadow-md" />
-                <div className="text-left">
-                  <p className="font-semibold text-lg">Samantha</p>
-                  <p className="text-gray-600 text-sm">Maid of Honor – Laura's sister and lifelong best friend.</p>
+              <div className="flex items-center gap-4">   
+                <div className="text-center md:text-left">
+                  <p className="font-semibold text-lg">Michelle Stoker-Mace</p>
+                  <p className="text-gray-600 text-sm">Maid of Honor – Laura's sister and lifelong partner in crime.
+                  Michelle has been by Laura’s side since day one—sister, best friend, and the one who always has her back.</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <img src="/bridesmaid2.jpg" alt="Bridesmaid 2" className="w-20 h-20 rounded-full object-cover shadow-md" />
-                <div className="text-left">
-                  <p className="font-semibold text-lg">Emily</p>
-                  <p className="text-gray-600 text-sm">Laura’s college roommate and soul sister.</p>
+                <div className="text-center md:text-left">
+                  <p className="font-semibold text-lg">Megan Marie</p>
+                  <p className="text-gray-600 text-sm">Laura’s soul sister and lifelong best friend.
+                  From childhood memories to adult milestones, Megan and Laura have shared it all. Their bond is unbreakable.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="text-center md:text-left">
+                  <p className="font-semibold text-lg">Kristin Maki</p>
+                  <p className="text-gray-600 text-sm">Baseball sister, confidant, and one of Laura’s best friends.
+                  Kristin is the kind of friend who shows up, listens, and makes every moment more fun—on and off the field.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="text-center md:text-left">
+                  <p className="font-semibold text-lg">Jamiee Jansen</p>
+                  <p className="text-gray-600 text-sm">Cousin, confidant, and a true ride-or-die.
+                  Jamiee and Laura have been through everything together—laughs, tears, and everything in between. Their connection runs deep.</p>
                 </div>
               </div>
             </div>
@@ -98,20 +122,49 @@ export default function DetailsPage() {
 
           {/* Groomsmen */}
           <div>
-            <h3 className="text-2xl font-semibold text-green-900 mb-4">🤵 Groomsmen</h3>
+            <h3 className="text-2xl font-semibold text-center md:text-left text-green-900 mb-4">🤵 Groomsmen</h3>
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <img src="/groomsman1.jpg" alt="Groomsman 1" className="w-20 h-20 rounded-full object-cover shadow-md" />
-                <div className="text-left">
-                  <p className="font-semibold text-lg">Jason</p>
-                  <p className="text-gray-600 text-sm">Best Man – Cliff’s brother and childhood hero.</p>
+                <div className="text-center md:text-left">
+                  <p className="font-semibold text-lg">Max Lantain</p>
+                  <p className="text-gray-600 text-sm">Best Man – Childhood friend, trusted confidant, and brother.
+                  Max has been a constant presence in the groom’s life—loyal, dependable, and always up for an adventure.</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <img src="/groomsman2.jpg" alt="Groomsman 2" className="w-20 h-20 rounded-full object-cover shadow-md" />
-                <div className="text-left">
-                  <p className="font-semibold text-lg">Tyler</p>
-                  <p className="text-gray-600 text-sm">Longtime friend and fellow adventurer.</p>
+                <div className="text-center md:text-left">
+                  <p className="font-semibold text-lg">Terril Cowan</p>
+                  <p className="text-gray-600 text-sm">Brother in Christ and lifelong partner in crime.
+                  Terril brings wisdom, laughs, and unwavering support—he’s family in every way that matters.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="text-center md:text-left">
+                  <p className="font-semibold text-lg">Mike Sarrazin</p>
+                  <p className="text-gray-600 text-sm">Childhood best friend and all-around solid guy.
+                  Mike’s been part of cliff's story from the beginning, a steady and loyal presence throughout the years.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="text-center md:text-left">
+                  <p className="font-semibold text-lg">Fabian Villeneuve</p>
+                  <p className="text-gray-600 text-sm">College brother and former roommate with legendary status.
+                  From wild stories to tight bonds, Fabian is more than a friend—he’s part of the family.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="text-center md:text-left">
+                  <p className="font-semibold text-lg">Lindsay Brittain</p>
+                  <p className="text-gray-600 text-sm">College friend, wilderness wingman, and loyal brother.
+                  Lindsay’s the guy you want in your corner—or stranded in the woods with. Rugged, reliable, and real.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="text-center md:text-left">
+                  <p className="font-semibold text-lg">Justin Wenzel</p>
+                  <p className="text-gray-600 text-sm">Best BC roommate and genuine friend.
+                  Justin brought laughter, late-night talks, and a sense of home—he’s a true brother in every sense.
+                  </p>
                 </div>
               </div>
             </div>
