@@ -15,10 +15,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className="overflow-auto">
-      <body className="relative bg-cover bg-center bg-fixed bg-no-repeat overflow-auto" style={{ backgroundImage: "url('/floralbg.webp')" }}>
+      <body className="relative bg-cover bg-center bg-fixed bg-no-repeat overflow-auto">
 
         <Nav />
-        <img src="/love.png" alt="Logo" />
 
         <main className="w-full mx-auto min-h-screen">{children}</main>
       </body>
