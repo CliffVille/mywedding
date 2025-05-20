@@ -23,7 +23,7 @@ export async function POST(request) {
 
     const { data, error } = await resend.emails.send({
       from: 'RSVP Form <onboarding@resend.dev>', // Your verified domain
-      to: ['lauradstoker@gmail.com'], // Change this to your email
+      to: ['clifford623@gmail.com'], // Change this to your email
       subject: 'New RSVP Received!',
       html: emailContent,
     });
