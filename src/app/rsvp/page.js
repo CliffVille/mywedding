@@ -34,7 +34,7 @@ export default function RsvpPage() {
     };
 
     try {
-      const response = await fetch("https://rsvp-api-one.vercel.app/", {
+      const response = await fetch("/api/rsvp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newEntry),

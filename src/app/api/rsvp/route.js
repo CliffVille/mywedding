@@ -1,5 +1,5 @@
 // app/api/rsvp/route.js
-import { resend } from '@/lib/resend';
+import { resend } from '../../../lib/resend';
 
 export async function POST(request) {
   try {
@@ -23,7 +23,7 @@ export async function POST(request) {
 
     const { data, error } = await resend.emails.send({
       from: 'RSVP Form <onboarding@resend.dev>', // Your verified domain
-      to: ['Clifford623@gmail.com'], // Change this to your email
+      to: ['lauradstoker@gmail.com'], // Change this to your email
       subject: 'New RSVP Received!',
       html: emailContent,
     });
@@ -40,9 +40,9 @@ export async function POST(request) {
     });
 
   } catch (error) {
-    console.error("RSVP error:", error);
-    return new Response(JSON.stringify({ error: "Internal server error" }), {
-      status: 500,
+    console.error("RSVP error:", error); // <-- shows the real cause
+    return new Response(JSON.stringify({ error: error.message || "Internal server error" }), {
+    status: 500,
     });
   }
 }
