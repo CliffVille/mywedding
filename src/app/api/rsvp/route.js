@@ -30,7 +30,7 @@ export async function POST(request) {
 
     // Send email using Resend SDK
     await resend.emails.send({
-      from: 'Clifford623@gmail.com', // Replace with your verified email/domain
+      from: 'RSVP <info@stokerville.com>', // Replace with your verified email/domain
       to: ['clifford623@gmail.com'], // Your email
       subject: 'New RSVP Received!',
       html: emailContent,
